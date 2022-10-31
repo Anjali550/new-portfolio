@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #58c2d2;
+  }
+  /* .first{
+    height:100vh;
+  } */
+  /* ---Navbar--- */
+  .nav-container{
+    /* height:40%; */
+    background-color: #000;
+  }
+  .nav-list{
+    display: flex;
+    /* text-decoration: none;
+    color: #58c2d2; */
+  }
+  .list-item {
+    /* margin-top: 1.5rem;
+    margin-left: 2rem; */
+    /* text-decoration: none; */
+    list-style: none;
+    padding: 2.5rem 2rem;
+    color: #fff;
+  
+    
+  }
+  .list-item:hover {
+    padding:2.5rem 2rem;
+    background-color: #58c2d2;
+    color: #000;
+    border-radius: 2rem;
+  }
+  /* ---container-section--- */
+  .container{
+
+    background-color:#58c2d2 ;
+    
+  }
+  .first-section{
+    padding-top:8rem;
+    padding-left: 10rem;
+  }
+  h3 {
+    padding-left: 5rem;
+  }
+  h1 {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    font-size: 4rem;
+  }
+  span {
+    color: #093b6a;
+  }
+  p {
+   
+    text-align: center;
+    /* padding-left: 5rem; */
+    padding-right: 25rem;
+    font-weight: 600;
+    line-height: 0.9rem;
+  }
+  .hero-button {
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    border: 3px solid #000;
+    background-color: transparent;
+    color: #000;
+    margin-top: .8rem;
+    margin-left: 22rem;
+    font-weight: 700;
+  }
+  .hero-button:hover {
+    color: #fff;
+    background-color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    /* border: 2px solid #fff; */
+  }
+  /* ---second-section--- */
+  .second-section{
+   /* align-self: flex-end; */
+   float: right;
+padding-top: 11.5rem;
+padding-right: 3rem;
+
+  }
+  .footerIcon{
+    text-decoration: none;
+    color:#58c2d2 ;
+    width: 30px;
+    margin:2px;
+    /* padding: 2rem; */
+
+  background-color: #000;
+  }
+  .find{
+    height:29px;
+    /* width:35px; */
+  }
+  /* ---Project-section--- */
+  .project-container {
+    margin-top: 1rem;
+    background-color: #111;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .project-work {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    margin-top: 2rem;
+    width: 50%;
+    margin-left: 25%;
+    font-family: "Montserrat", sans-serif;
+  
+    color: rgb(139, 125, 132);
+  }
+  
+  .projects {
+    /* margin: 5rem 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      place-items: center;
+      gap: 2rem; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin: 5rem 6rem;
+  }
+  
+  .project {
+    margin-top: 5rem;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    box-shadow: rgba(249, 244, 244, 0.881) 0px 2px 8px;
+    border-radius: 20px 20px 10px 10px;
+    width: 28rem;
+    height: 22rem;
+  }
+  
+  .project-img img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .project-title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #d9d9d9;
+  }
+  
+  .project-links {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .project-live-link,
+  .project-github-link {
+    color: #000;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem;
+  }
+  
+  .project-live-link:hover {
+    box-shadow: rgba(63, 39, 70, 0.644) 2px 2px 2px;
+    background-color: #64696e;
+    color: #fff;
+  
+    font-weight: 400;
+  }
+  
+  .project-github-link:hover {
+    box-shadow: rgba(63, 39, 70, 0.644) 2px 2px 2px;
+    background-color: #64696e;
+    color: #fff;
+    font-weight: 400;
+  }
+  footer {
+    margin: auto;
+  }
+  footer .home-button {
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 1.2rem;
+    color: #000;
+    font-weight: 600;
+  }
+  footer .home-button:hover {
+    background-color: #000;
+    color: #fff;
+    font-weight: 300;
+  }
+  small {
+    position: relative;
+    top: 25px;
+  }
+  
+  @media (max-width: 500px) {
+    .projects {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      padding: 2rem 0rem;
+    }
+  
+    .project {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      height: 20rem;
+    }
+  }
+  @media (max-width: 640px) and (min-width:0px) {
+    .first-section{
+         padding-top:5rem; 
+         padding-left:5rem; 
+        /* background-color: #29323c; */
+      }
+      h3 {
+        padding-top:1 rem;
+        padding-left: 1rem;
+      }
+      h1 {
+        padding-top: 2rem;
+        padding-left: 1rem;
+        font-size: 3.8rem;
+      }
+      
+      p {
+        text-align:center;
+        padding-right: .5rem;
+        padding-top: 1rem;
+        /* padding-left:2rem ; */
+        /* padding-top: 2.rem;
+       
+       
+        padding-left: 8rem;
+       
+        font-weight: 400;
+        line-height: 0.9rem; */
+      }
+      .hero-button {
+        margin-top:3rem;
+        margin-left: 15rem;
+      }
+      .second-section{
+        margin-right:6rem;
+      }
+  }
+  
+  @media (max-width: 991px) {
+    .projects {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  
+    .project {
+      margin-left: -13px;
+      display: block;
+      margin-bottom: 20px;
+      height: 19rem;
+    }
+  }
+  @media (max-width: 1180px) and (min-width:640px){
+    .first-section{
+        padding-top:3rem;
+        padding-left: 5rem;  
+    }
+    p{
+       
+        padding-right:10rem ;
+       
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .projects {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      padding: 2rem 0rem;
+    }
+  
+    .project {
+      display: block;
+      margin-bottom: 20px;
+      height: 22rem;
+    }
+  }
+  
